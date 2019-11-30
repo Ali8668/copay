@@ -153,7 +153,7 @@
     "cordova-ios": "4.5.4",
     "cordova-launch-review": "3.1.1",
     "cordova-plugin-add-swift-support": "1.7.2",
-    "cordova-plugin-android-fingerprint-auth": "1.4.3",
+    "cordova-plugin-android-fingerprint-auth": "1.5.0",
     "cordova-plugin-compat": "1.2.0",
     "cordova-plugin-customurlscheme": "https://github.com/cmgustavo/Custom-URL-scheme.git#v4.0",
     "cordova-plugin-device": "2.0.2",
