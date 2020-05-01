@@ -108,7 +108,9 @@
     "sign:bitpay-macos": "gpg -u 1112CFA1 --output desktop/BitPay.dmg.sig --detach-sig desktop/BitPay.dmg",
     "sign:bitpay-linux": "gpg -u 1112CFA1 --output desktop/BitPay-linux.zip.sig --detach-sig desktop/BitPay-linux.zip",
     "sign:bitpay-windows": "gpg -u 1112CFA1 --output desktop/BitPay.exe.sig --detach-sig desktop/BitPay.exe",
-    "verify:bitpay-desktop": "gpg --verify desktop/BitPay-linux.zip.sig desktop/BitPay-linux.zip; gpg --verify desktop/BitPay.exe.sig desktop/BitPay.exe; gpg --verify desktop/BitPay.dmg.sig desktop/BitPay.dmg"
+    "verify:bitpay-desktop": "gpg --verify desktop/BitPay-linux.zip.sig desktop/BitPay-linux.zip; gpg --verify desktop/BitPay.exe.sig desktop/BitPay.exe; gpg --verify desktop/BitPay.dmg.sig desktop/BitPay.dmg",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@angular/common": "5.2.10",
@@ -190,7 +192,8 @@
     "sw-toolbox": "3.6.0",
     "text-encoding": "0.6.4",
     "ts-md5": "1.2.2",
-    "zone.js": "0.8.19"
+    "zone.js": "0.8.19",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@angular/cli": "1.7.4",
@@ -293,5 +296,6 @@
   },
   "prettier": {
     "singleQuote": true
-  }
+  },
+  "snyk": true
 }
